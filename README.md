@@ -1,9 +1,7 @@
-# Advanced Programming course Ass4:
-In this repository you can see our fourth c++ project.
-In this exercise our server will have to handle several clients at the same time. That is, at a given moment, the server can speak
-with several different clients at the same time.
-Each client will speak with a CLI object which will play the role as a "sub server" that dealing only with this
-specific client requests , based on the input choose from the user on the client side.
+# Knn vectors classification
+In this project the server can handle several clients at the same time, using multi-threading. 
+Each client speaks with a CLI object which plays a role as a "sub server" that deals only with this
+specific client requests , based on the input from the user in the client side.
 The project contains the following files :
 - client.cpp
 - server.cpp
@@ -48,7 +46,7 @@ The project contains the following files :
 # How to compile and run the project
 1. Download to your computer all the files that described above and put them in the same directory.
 2. Open two terminals in the path of the directory you inserted all the files.
-3. Know your path of the csv files you would like to run in the program.
+3. Know your path of the csv files you would like to run in the program, you can use the csv files from this repository.
 3. Use the following compile line : make 
 4. Use the following run line for the server : ./server.out [wanted server port].
    - For example: ./server.out 12345
@@ -61,9 +59,9 @@ The project contains the following files :
 6. Another option is to clone the project by using Git and than compile and run the project with the accurate lines in section 4 and section 5.
     - The link for our github is : https://github.com/RoiElitzur/adv_prog_ass4.git.
 
-# About the user's inserted input at the client side
+# About the user's input at the client side
   - Option 1:
-       - The user will need to insert two valid paths , the first one will be the one of the classified vectors csv file and the 
+       - The user needs to insert two valid paths , the first one will be the one of the classified vectors csv file and the 
          second one will be the one of the unclassified vectors csv file.
        - If one of the paths are invalid or the content of the file are not valid for some reasons such as:
             - Invalid vectors values (only doubles.)
